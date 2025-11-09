@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1: Task 1.3 - Scatter Plot</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Inflation Data Viz</a>
+            <!-- Navigation system (5.5) -->
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="page1.html" class="active">Page 1: Task 1</a>
+                <a href="page2.html">Page 2: Task 2</a>
+                <a href="page3.html">Page 3: Task 3 & 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="chart-card">
+            <h2>Task 1.3: Optimized Scatter Plot (NY vs. LA)</h2>
+            <p style="margin-bottom: 1.5rem;">This chart encodes the 'Year' on the X-axis and the 'Inflation Index' on the Y-axis. The size of the circle represents the inflation value, and color separates the two cities.</p>
+            
+            <!-- Chart Image (5.3) -->
+            <img src="charts/scattered chart.png" alt="Optimized Scatter Chart showing New York and Los Angeles Inflation" style="max-height: 500px; object-fit: contain;">
+
+            <div class="analysis">
+                <h3>Analysis</h3>
+                <!-- Analysis content from analysis_report.md -->
+                <p>The main goal of this chart was to see how the inflation index for Los Angeles and New York has changed over time. What you can easily notice is that **New York always has a higher inflation index than Los Angeles** for every year shown. No matter what year you look at, the blue circle (New York) is always sitting above the orange circle (Los Angeles).</p>
+                <p>We also set the size of the circle to match the index value. Since all the circles get bigger as they move to the right side of the graph (towards more recent years), it just means that **inflation has been increasing steadily** in both big cities over the years we looked at.</p>
+                <p>The optimized chart (Task 1.3) is better because it is interactive, allowing for zooming and panning to easily explore the data.</p>
+            </div>
+            
+            <!-- Back button (5.5) -->
+            <a href="index.html" class="back-btn">← Back to Homepage</a>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="main-content">
+            <p>Page 1 of 3 | Scientific Data Visualization Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
