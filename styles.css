@@ -1,0 +1,190 @@
+/*
+ * Stylesheet: styles.css
+ * This file provides the creative and consistent styling for the entire website.
+ * It uses the 'Inter' font and a dark, professional color palette.
+ */
+
+/* 5.4 Add CSS to your homepage and individual pages. */
+
+:root {
+    --primary-color: #3b82f6; /* Blue-500 */
+    --secondary-color: #1f2937; /* Gray-800 */
+    --background-color: #f9fafb; /* Gray-50 */
+    --card-bg: #ffffff;
+    --text-color: #374151; /* Gray-700 */
+    --hover-bg: #e5e7eb;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header and Navigation --- */
+.header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #e5e7eb; /* Light gray */
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --- Main Content Layout --- */
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* --- Card Styles (5.2, 5.3) --- */
+.chart-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--primary-color);
+}
+
+.chart-card h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.chart-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #d1d5db;
+}
+
+.analysis p {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* --- Homepage Grid (5.1) --- */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.page-link-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e5e7eb;
+}
+
+.page-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.page-link-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-link-card p {
+    color: #6b7280;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid #d1d5db;
+    margin-top: 4rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* --- Back Button (5.5) --- */
+.back-btn {
+    display: inline-block;
+    background-color: #f59e0b; /* Yellow/Orange */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 2rem;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background-color: #d97706; /* Darker Yellow/Orange */
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .nav-links a {
+        margin-left: 0;
+        text-align: center;
+    }
+    .page-link-card {
+        margin: 1rem 0;
+    }
+    .chart-card {
+        padding: 1rem;
+    }
+}
