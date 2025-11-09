@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2: Task 2 - Stacked Bar Chart</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Inflation Data Viz</a>
+            <!-- Navigation system (5.5) -->
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="page1.html">Page 1: Task 1</a>
+                <a href="page2.html" class="active">Page 2: Task 2</a>
+                <a href="page3.html">Page 3: Task 3 & 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="chart-card">
+            <h2>Task 2: Stacked Bar Chart (2018 onwards)</h2>
+            <p style="margin-bottom: 1.5rem;">This chart groups the inflation index values by year for the four regions, stacking their values to show the total combined index for recent years.</p>
+            
+            <!-- Chart Image (5.3) -->
+            <img src="charts/Grouped and stacked bar.png" alt="Stacked Bar Chart for recent inflation totals" style="max-height: 500px; object-fit: contain;">
+
+            <div class="analysis">
+                <h3>Analysis</h3>
+                <!-- Analysis content from analysis_report.md -->
+                <p>This chart focuses on the inflation index for the last few years, starting from 2018. Since it is a stacked bar chart, the height of each bar shows the **total combined inflation index** of all four regions (US Average, NY, LA, and Chicago) for that year.</p>
+                <p>The biggest takeaway here is the overall trend: the total height of the bars gets noticeably larger as you move from 2018 to 2022. This shows that the combined inflation pressure across these major US areas was consistently growing, especially with a visible jump in 2022.</p>
+                <p>The colors inside the bar also tell us that New York is consistently the biggest contributor to that yearly total, as its colored section is always the thickest or highest placed segment in the stack.</p>
+            </div>
+            
+            <!-- Back button (5.5) -->
+            <a href="index.html" class="back-btn">← Back to Homepage</a>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="main-content">
+            <p>Page 2 of 3 | Scientific Data Visualization Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
