@@ -3,204 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inflation Data Visualization Project</title>
-    <!-- Load Tailwind CSS for modern styling and responsiveness -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles for a cleaner look */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
-        }
-        .card {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-        }
-        .placeholder {
-            min-height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e5e7eb;
-            color: #4b5563;
-            font-style: italic;
-        }
-    </style>
+    <title>Homepage - Inflation Data Visualizations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="p-4 md:p-8">
+<body>
 
-    <header class="text-center mb-10 bg-white p-6 rounded-xl shadow-lg">
-        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-800">Scientific Data Visualization ICE-9</h1>
-        <p class="text-lg text-gray-600 mt-2">Inflation Index Analysis for Major U.S. Metropolitan Areas</p>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Inflation Data Viz</a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="page1.html">Page 1: Task 1</a>
+                <a href="page2.html">Page 2: Task 2</a>
+                <a href="page3.html">Page 3: Task 3 & 4</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="max-w-6xl mx-auto">
-        
-        <!-- Navigation/Chart Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <main class="main-content">
+        <h1 style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 1rem; text-align: center;">Project Overview & Navigation</h1>
+        <p style="text-align: center; color: var(--text-color); max-width: 800px; margin: 0 auto 3rem;">
+            Welcome to the Scientific Data Visualization project. This site presents four different charts analyzing the Inflation Index for major U.S. metropolitan areas from 2000 to 2022.
+            Use the links below or the navigation bar above to explore the individual tasks and their analyses.
+        </p>
+
+        <div class="page-grid">
             
-            <!-- Card 1: Task 1.2 & 1.3 -->
-            <a href="#task1" class="card bg-white p-5 rounded-lg border border-gray-200 block">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">Task 1: Scatter Plot</h2>
-                <div class="placeholder rounded-lg">
-                    Los Angeles & New York Comparison
-                </div>
-                <p class="text-sm text-gray-500 mt-3">Visualizes inflation by year, using size to encode the index value.</p>
+            <a href="page1.html" class="page-link-card">
+                <h3>Page 1: Scatter Plot</h3>
+                <p>Task 1.3: Los Angeles & New York Comparison using color and size encoding.</p>
             </a>
 
-            <!-- Card 2: Task 2 -->
-            <a href="#task2" class="card bg-white p-5 rounded-lg border border-gray-200 block">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">Task 2: Stacked Bar Chart</h2>
-                <div class="placeholder rounded-lg">
-                    Recent Years (2018+) Totals
-                </div>
-                <p class="text-sm text-gray-500 mt-3">Compares the combined inflation index for four regions since 2018.</p>
-            </a>
-            
-            <!-- Card 3: Task 3 -->
-            <a href="#task3" class="card bg-white p-5 rounded-lg border border-gray-200 block">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">Task 3: Stacked Area Chart</h2>
-                <div class="placeholder rounded-lg">
-                    Long-Term Trend (2000+)
-                </div>
-                <p class="text-sm text-gray-500 mt-3">Shows the total and proportional change of the index over two decades.</p>
-            </a>
-            
-            <!-- Card 4: Task 4 -->
-            <a href="#task4" class="card bg-white p-5 rounded-lg border border-gray-200 block">
-                <h2 class="text-xl font-semibold text-gray-800 mb-3">Task 4: Multiple Line Chart</h2>
-                <div class="placeholder rounded-lg">
-                    Regional Trend Comparison
-                </div>
-                <p class="text-sm text-gray-500 mt-3">Tracks the individual inflation progress of all four regions over time.</p>
+            <a href="page2.html" class="page-link-card">
+                <h3>Page 2: Stacked Bar Chart</h3>
+                <p>Task 2: Comparing combined inflation indices for all four regions since 2018.</p>
             </a>
 
-        </div>
+            <a href="page3.html" class="page-link-card">
+                <h3>Page 3: Area & Line Charts</h3>
+                <p>Task 3 & 4: Visualizing long-term trends using Stacked Area and Multiple Line Charts.</p>
+            </a>
 
-        <!-- Detail Sections for Charts and Analysis -->
-
-        <div class="mt-12 space-y-12">
+            <a href="analysis_report.md" class="page-link-card">
+                <h3>Full Analysis Report</h3>
+                <p>Read the simple, human-written analysis for all four tasks.</p>
+            </a>
             
-            <!-- Task 1 Detail -->
-            <section id="task1" class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
-                <h2 class="text-2xl font-bold text-blue-800 mb-4">Task 1: Scatter Plot Analysis</h2>
-                <div class="flex flex-col lg:flex-row gap-6">
-                    <div class="lg:w-1/2">
-                        <div class="placeholder w-full h-80 rounded-lg mb-4">
-                            [Image Placeholder: Scatter Plot (NY vs LA)]
-                        </div>
-                        <p class="text-gray-700 leading-relaxed">
-                            <!-- Analysis content from analysis_report.md -->
-                            The main goal of this chart was to see how the inflation index for Los Angeles and New York has changed over time. What you can easily notice is that **New York always has a higher inflation index than Los Angeles** for every year shown. No matter what year you look at, the blue circle (New York) is always sitting above the orange circle (Los Angeles). We also set the size of the circle to match the index value. Since all the circles get bigger as they move to the right side of the graph (towards more recent years), it just means that **inflation has been increasing steadily** in both big cities over the years we looked at. The optimized chart (Task 1.3) is better because it is interactive, allowing for zooming and panning to easily explore the data.
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto text-gray-700">
-                            <!-- Placeholder for code snippet -->
-                            # Snippet from data_analysis.py for Task 1.3:
-                            optimized_chart = base_1_2.mark_circle().encode(...
-                            # ... size and color encoding ...
-                            ).properties(title='Optimized Inflation Scatter Plot ...').interactive()
-                        </pre>
-                        <a href="#" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">↑ Back to Top</a>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Task 2 Detail -->
-            <section id="task2" class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
-                <h2 class="text-2xl font-bold text-green-800 mb-4">Task 2: Stacked Bar Chart Analysis</h2>
-                <div class="flex flex-col lg:flex-row gap-6">
-                    <div class="lg:w-1/2">
-                        <div class="placeholder w-full h-80 rounded-lg mb-4">
-                            [Image Placeholder: Stacked Bar Chart (2018+)]
-                        </div>
-                        <p class="text-gray-700 leading-relaxed">
-                            <!-- Analysis content from analysis_report.md -->
-                            This chart focuses on the inflation index for the last few years, starting from 2018. Since it is a stacked bar chart, the height of each bar shows the **total combined inflation index** of all four regions (US Average, NY, LA, and Chicago) for that year. The biggest takeaway here is the overall trend: the total height of the bars gets noticeably larger as you move from 2018 to 2022. This shows that the combined inflation pressure across these major US areas was consistently growing, especially with a visible jump in 2022. The colors inside the bar also tell us that New York is consistently the biggest contributor to that yearly total.
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto text-gray-700">
-                            <!-- Placeholder for code snippet -->
-                            # Snippet from data_analysis.py for Task 2:
-                            bar_chart = alt.Chart(df_recent).mark_bar().encode(
-                                x=alt.X('Year:O', title='Year'),
-                                y=alt.Y('InflationIndex:Q', stack='zero', ...),
-                                color=alt.Color('City:N', title='Metropolitan Area')
-                            ).properties(title='Stacked Bar Chart ...')
-                        </pre>
-                        <a href="#" class="mt-4 inline-block text-green-600 hover:text-green-800 font-medium">↑ Back to Top</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Task 3 Detail -->
-            <section id="task3" class="bg-white p-6 rounded-xl shadow-md border-t-4 border-red-500">
-                <h2 class="text-2xl font-bold text-red-800 mb-4">Task 3: Stacked Area Chart Analysis</h2>
-                <div class="flex flex-col lg:flex-row gap-6">
-                    <div class="lg:w-1/2">
-                        <div class="placeholder w-full h-80 rounded-lg mb-4">
-                            [Image Placeholder: Stacked Area Chart (All Years)]
-                        </div>
-                        <p class="text-gray-700 leading-relaxed">
-                            <!-- Analysis content from analysis_report.md -->
-                            The area chart is helpful for seeing the change in the total inflation index over the entire time span (starting from 2000). The overall look of the chart is a smooth, continuous rise from the left to the right. The entire colored area is getting bigger as time goes on, which confirms the **long-term upward trend of the inflation index** across all regions. New York's section takes up the most area, simply because it generally has the largest index value each year, making it the highest line on the chart. This chart emphasizes the idea of a continuous, compounding increase in inflation over two decades.
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto text-gray-700">
-                            <!-- Placeholder for code snippet -->
-                            # Snippet from data_analysis.py for Task 3:
-                            area_chart = alt.Chart(df_all_long).mark_area().encode(
-                                x=alt.X('Year:O', title='Year'),
-                                y=alt.Y('InflationIndex:Q', stack='zero', ...),
-                                color=alt.Color('City:N', title='Metropolitan Area')
-                            ).properties(title='Stacked Area Chart ...')
-                        </pre>
-                        <a href="#" class="mt-4 inline-block text-red-600 hover:text-red-800 font-medium">↑ Back to Top</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Task 4 Detail -->
-            <section id="task4" class="bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
-                <h2 class="text-2xl font-bold text-yellow-800 mb-4">Task 4: Line Chart Analysis</h2>
-                <div class="flex flex-col lg:flex-row gap-6">
-                    <div class="lg:w-1/2">
-                        <div class="placeholder w-full h-80 rounded-lg mb-4">
-                            [Image Placeholder: Line Chart (All Regions)]
-                        </div>
-                        <p class="text-gray-700 leading-relaxed">
-                            <!-- Analysis content from analysis_report.md -->
-                            The line chart is the clearest way to compare how the inflation index has moved for the four different regions over all the years in the dataset. All four lines follow a **very similar path**, moving upwards together over time, which means they are all affected by the same larger economic changes. You can see the clear ranking of the cities: the New York line is always on top (highest inflation), followed by Los Angeles, then Chicago, and the US City Average usually sits slightly below or sometimes crossing over the Chicago line. This visual separation of the lines makes it very easy to track the individual progress of each city and see that their relative ranking for inflation has remained quite stable.
-                        </p>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto text-gray-700">
-                            <!-- Placeholder for code snippet -->
-                            # Snippet from data_analysis.py for Task 4:
-                            line_chart = alt.Chart(df_all_long).mark_line().encode(
-                                x=alt.X('Year:O', title='Year'),
-                                y=alt.Y('InflationIndex:Q', title='Inflation Index Value'),
-                                color=alt.Color('City:N', title='Metropolitan Area')
-                            ).properties(title='Line Chart Showing Inflation Index ...')
-                        </pre>
-                        <a href="#" class="mt-4 inline-block text-yellow-600 hover:text-yellow-800 font-medium">↑ Back to Top</a>
-                    </div>
-                </div>
-            </section>
-
         </div>
     </main>
 
-    <footer class="text-center mt-12 pt-6 border-t border-gray-300 text-gray-500">
-        <p>&copy; 2025 Data Visualization Project. For Educational Use.</p>
+    <footer class="footer">
+        <div class="main-content">
+            <p>CSCE 5320 Scientific Data Visualization | Final Web Presentation</p>
+        </div>
     </footer>
 
 </body>
