@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3: Task 3 & 4 - Area and Line Charts</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Inflation Data Viz</a>
+            <!-- Navigation system (5.5) -->
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="page1.html">Page 1: Task 1</a>
+                <a href="page2.html">Page 2: Task 2</a>
+                <a href="page3.html" class="active">Page 3: Task 3 & 4</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <!-- Task 3: Stacked Area Chart -->
+        <div class="chart-card">
+            <h2>Task 3: Stacked Area Chart (Long-Term Trend)</h2>
+            <p style="margin-bottom: 1.5rem;">This chart shows the total inflation index (area height) and the proportional contribution of each region from the year 2000 onwards.</p>
+            
+            <!-- Chart Image (5.3) -->
+            <img src="charts/stacked area chart.png" alt="Stacked Area Chart showing long-term inflation trend" style="max-height: 500px; object-fit: contain;">
+
+            <div class="analysis">
+                <h3>Analysis for Stacked Area Chart</h3>
+                <!-- Analysis content from analysis_report.md -->
+                <p>The area chart is helpful for seeing the change in the total inflation index over the entire time span (starting from 2000). The overall look of the chart is a smooth, continuous rise from the left to the right. The entire colored area is getting bigger as time goes on, which confirms the **long-term upward trend of the inflation index** across all regions.</p>
+                <p>New York's section takes up the most area, simply because it generally has the largest index value each year, making it the highest line on the chart. This chart emphasizes the idea of a continuous, compounding increase in inflation over two decades.</p>
+            </div>
+        </div>
+
+        <!-- Task 4: Multiple Line Chart -->
+        <div class="chart-card">
+            <h2>Task 4: Multiple Line Chart (Regional Comparison)</h2>
+            <p style="margin-bottom: 1.5rem;">This chart is the clearest visualization for comparing the individual index trends of all four regions over the entire time series.</p>
+            
+            <!-- Chart Image (5.3) -->
+            <img src="charts/multiple line chart.png" alt="Multiple Line Chart comparing four regions" style="max-height: 500px; object-fit: contain;">
+
+            <div class="analysis">
+                <h3>Analysis for Multiple Line Chart</h3>
+                <!-- Analysis content from analysis_report.md -->
+                <p>The line chart is the clearest way to compare how the inflation index has moved for the four different regions over all the years in the dataset. All four lines follow a **very similar path**, moving upwards together over time, which means they are all affected by the same larger economic changes.</p>
+                <p>You can see the clear ranking of the cities: the New York line is always on top (highest inflation), followed by Los Angeles, then Chicago, and the US City Average usually sits slightly below or sometimes crossing over the Chicago line. This visual separation of the lines makes it very easy to track the individual progress of each city and see that their relative ranking for inflation has remained quite stable.</p>
+            </div>
+            
+            <!-- Back button (5.5) -->
+            <a href="index.html" class="back-btn">← Back to Homepage</a>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="main-content">
+            <p>Page 3 of 3 | Scientific Data Visualization Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
